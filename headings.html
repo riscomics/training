@@ -3,18 +3,51 @@
     <head>
         <title>TRAINING</title>
         <style>
+            body {
+                background-color: aliceblue;
+            }
             #headboard {
+                
+                margin: auto;
                 background-color: brown;
                 color: aliceblue;
                 text-align: center;
-                font-size: 23px;
+                font-size: 28px;
+                font-family: Arial, Helvetica, sans-serif;
+                padding: 5px; 
+                width: 628px;
+                
+            }
+            #Menu {
+                color: whitesmoke;
+                width: 88px;
+                height: 32px;
+                float: right;
+                background-color: cadetblue;
+                border: 2px;
+                border-radius: 5%;
+                text-align:center;
+                padding-top: 5px;
+                margin: auto;
+            }
+            #Menu:hover {
+                background-color: blue;
+            }
+
+            #leftbox {
+                background-color: darkcyan;
+                width: fit-content;
+                height: fit-content;
+                color: aliceblue;
+                text-align: center;
                 font-family: Arial, Helvetica, sans-serif;
             }
+
         </style>
     </head>
     <body>
-        <h1 id="headboard">This is the size of the HEADING</h1>
-        <h2>This is the size of the SUBTITLE</h2>
-        <h6>This is the smallest text we can have typed here in the HTML Body!</h6>
+        <div id="headboard">This is the size of the HEADING</div>
+        <h2 id="Menu">MENU</h2>
+        <h6 id="leftbox">This is the smallest text we can have typed here in the HTML Body!</h6>
     </body>
 </html>
