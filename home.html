@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gisugo Home</title>
+        <style>
+            @media (min-width: 870px) {
+                 
+            body {
+                background-color: #856f67;
+            }
+            #headbc {
+                width: auto;
+                height: 150px;
+                background-color: #e6d6ae;   
+            }
+            #logo {
+                
+                padding-left: 20px;
+                padding-top: 12px;
+                padding-right: 8px;
+                float: left;
+                margin-right: 2px;
+                img {
+                    width: 128px;
+                }
+            }
+            #menu {
+                float: right;
+                margin:auto;
+                padding-top: 35px;
+                padding-right: 25px;
+                img {
+                    width: 80px;
+                }
+                
+            }
+            #titles {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 88px;
+                text-align: left;
+                color: #363f4f;
+                margin:auto
+                line-height: 0px;
+                
+            }
+
+            #subtitle {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 38px;
+                text-align: left;
+                color: #363f4f;
+                float: left;     
+                margin-left: 10px;
+                
+            }
+  
+            #youtube {
+                float: center;
+                clear: none;
+                line-height: 0px;
+                img {
+                    width: 820px;
+                }
+                background-color: #363f4f;
+            }
+            .linebreak {
+                background-color: #ff7bd5;
+                width: auto;
+                height: 18px;
+            }
+
+            .category {
+                background-color: #363f4f;
+                color: #e6d6ae;
+                font-size: 45px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                width: auto;
+                height: 72px;
+                padding-top: 15px;
+                margin-bottom: 45px;
+            }
+
+            #container1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                 
+            }
+            #container1 > div {
+                margin: 15px;
+                margin-bottom: 100px;
+                padding: 10px;
+                width: 235px;
+                
+            }
+            .boxframe {
+                
+                width: 235px;
+                height: 138px;
+                flex-shrink: 0;
+                border-radius: 15px;
+                background-color: #D9D9D9;
+                margin: 15px;
+                
+                line-height: 70px;
+                img {
+                    width: 188px;
+                    padding-top: 20px;
+                } 
+                color: #e6d6ae;
+                text-align: center;
+                font-size: 35px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .boxframe:hover {
+                background-color: aliceblue;
+            }
+        }
+
+
+        @media (max-width: 870px) {
+               
+            body {
+                background-color: #856f67;
+            }
+            #headbc {
+                width: auto;
+                height: 100px;
+                background-color: #e6d6ae;   
+            }
+            #logo {
+                
+                padding-left: 15px;
+                padding-top: 6px;
+                padding-right: 6px;
+                float: left;
+                margin-right: 1px;
+                img {
+                    width: 88px;
+                }
+            }
+            #menu {
+                float: right;
+                margin:auto;
+                padding-top: 20px;
+                padding-right: 20px;
+                img {
+                    width: 55px;
+                }
+                
+            }
+            #titles {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 59px;
+                text-align: left;
+                color: #363f4f;
+                margin:auto
+                line-height: 0px;
+                
+            }
+
+            #subtitle {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 23px;
+                text-align: left;
+                color: #363f4f;
+                float: left;     
+                margin-left: 5px;
+                
+            }
+  
+            #youtube {
+                float: center;
+                clear: none;
+                line-height: 0px;
+                img {
+                    width: 500px;
+                }
+                background-color: #363f4f;
+            }
+            .linebreak {
+                background-color: #ff7bd5;
+                width: auto;
+                height: 8px;
+            }
+
+            .category {
+                background-color: #363f4f;
+                color: #e6d6ae;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                text-align: center;
+                width: auto;
+                height: 40px;
+                padding-top: 7px;
+                margin-bottom: 20px;
+            }
+
+            #container1 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                 
+            }
+            #container1 > div {
+                margin: 8px;
+                margin-bottom: 45px;
+                padding: 5px;
+                width: 110px;
+                
+            }
+            .boxframe {
+                
+                width: 110px;
+                height: 70px;
+                flex-shrink: 0;
+                border-radius: 8px;
+                background-color: #D9D9D9;
+                margin: 8px;
+                
+                line-height: 35px;
+                img {
+                    width: 88px;
+                    padding-top: 10px;
+                } 
+                color: #e6d6ae;
+                text-align: center;
+                font-size: 17px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .boxframe:hover {
+                background-color: aliceblue;
+            }
+        }
+
+        @media (max-width: 533px) {
+               
+               body {
+                   background-color: #856f67;
+               }
+               #headbc {
+                   width: auto;
+                   height: 75px;
+                   background-color: #e6d6ae;   
+               }
+               #logo {
+                   
+                   padding-left: 10px;
+                   padding-top: 3px;
+                   padding-right: 4px;
+                   float: left;
+                   margin-right: 1px;
+                   img {
+                       width: 68px;
+                   }
+               }
+               #menu {
+                   float: right;
+                   margin:auto;
+                   padding-top: 17px;
+                   padding-right: 20px;
+                   img {
+                       width: 40px;
+                   }
+                   
+               }
+               #titles {
+                   font-family: Arial, Helvetica, sans-serif;
+                   font-weight: bold;
+                   font-size: 45px;
+                   text-align: left;
+                   color: #363f4f;
+                   margin:auto
+                   line-height: 0px;
+                   
+               }
+   
+               #subtitle {
+                   font-family: Arial, Helvetica, sans-serif;
+                   font-weight: bold;
+                   font-size: 17px;
+                   text-align: left;
+                   color: #363f4f;
+                   float: left;     
+                   margin-left: 5px;
+                   
+               }
+     
+               #youtube {
+                   float: center;
+                   clear: none;
+                   line-height: 0px;
+                   img {
+                       width: 380px;
+                   }
+                   background-color: #363f4f;
+               }
+               .linebreak {
+                   background-color: #ff7bd5;
+                   width: auto;
+                   height: 8px;
+               }
+   
+               .category {
+                   background-color: #363f4f;
+                   color: #e6d6ae;
+                   font-size: 20px;
+                   font-family: Arial, Helvetica, sans-serif;
+                   font-weight: bold;
+                   text-align: center;
+                   width: auto;
+                   height: 30px;
+                   padding-top: 7px;
+                   margin-bottom: 20px;
+               }
+   
+               #container1 {
+                   display: flex;
+                   flex-wrap: wrap;
+                   justify-content: center;
+                    
+               }
+               #container1 > div {
+                   margin: 5px;
+                   margin-bottom: 45px;
+                   padding: 5px;
+                   width: 110px;
+                   
+               }
+               .boxframe {
+                   
+                   width: 110px;
+                   height: 70px;
+                   flex-shrink: 0;
+                   border-radius: 8px;
+                   background-color: #D9D9D9;
+                   margin: 8px;
+                   
+                   line-height: 35px;
+                   img {
+                       width: 88px;
+                       padding-top: 10px;
+                   } 
+                   color: #e6d6ae;
+                   text-align: center;
+                   font-size: 17px;
+                   font-weight: bold;
+                   font-family: Arial, Helvetica, sans-serif;
+               }
+               .boxframe:hover {
+                   background-color: aliceblue;
+               }
+           }
+        </style>
+    </head>
+    <body>
+        <center> 
+        <div id="headbc">
+          <div id="logo"><img src="logo.png"></div>
+          <div id="menu"><a href="Web Programming Course Outline.html">
+            <img src="menu button.png"></a></div>  
+          <div id="titles">GISUGO</div>
+          <div id="subtitle">Local Service Marketplace</div>
+
+        </div>
+        <div class="linebreak"></div>
+        <div id="youtube"><img src="YouTube.jpg" alt="youtube"></div>
+        <div class="linebreak"></div>
+        <div class="category">BASIC HELPER</div>
+
+    
+
+    <div id="container1">
+
+        <div class="boxframe"><img src="WEB READY/Hatod.png">HATOD </div>
+        <div class="boxframe"><img src="WEB READY/Hakot.png">HAKOT </div>
+        <div class="boxframe"><img src="WEB READY/Kompra.png">KOMPRA </div>
+        <div class="boxframe"><img src="WEB READY/Luto.png">LUTO </div>
+        <div class="boxframe"><img src="WEB READY/Hugas.png">HUGAS </div>
+        <div class="boxframe"><img src="WEB READY/Laba.png">LABA </div>
+        <div class="boxframe"><img src="WEB READY/Limpyo.png">LIMPYO </div>
+        <div class="boxframe"><img src="WEB READY/Tindera.png">TINDERA </div>
+        <div class="boxframe"><img src="WEB READY/Bantay.png">BANTAY </div>
+        </div>
+        
+    <div class="category">SKILLED WORKERS</div>
+        
+        <div id="container1">
+        <div class="boxframe"><img src="WEB READY/Painter.png">PAINTER</div>
+        <div class="boxframe"><img src="WEB READY/Carpenter.png">CARPENTER</div>
+        <div class="boxframe"><img src="WEB READY/Plumber.png">PLUMBER </div>
+        </div>
+        <div id="container1">
+        <div class="boxframe"><img src="WEB READY/Mechanic.png">MECHANIC</div>
+        <div class="boxframe"><img src="WEB READY/Tailor.png">TAILOR</div>
+        <div class="boxframe"><img src="WEB READY/Driver.png">DRIVER </div>
+        </div>
+        
+    <div class="category">PROFESSIONALS</div>
+       
+        <div id="container1">
+        <div class="boxframe"><img src="WEB READY/Nurse.png">NURSE</div>
+        <div class="boxframe"><img src="WEB READY/Doctor.png">DOCTOR</div>
+        <div class="boxframe"><img src="WEB READY/Lawyer.png">LAWYER </div>
+        </div>
+        <div id="container1">
+        <div class="boxframe"><img src="WEB READY/Security.png">SECURITY</div>
+        <div class="boxframe"><img src="WEB READY/Electrician.png">ELECTRICIAN</div>
+        <div class="boxframe"><img src="WEB READY/Tutor.png">TUTOR</div>
+        </div>
+ 
+
+
+
+    </body>
+
+</html>
