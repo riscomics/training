@@ -1,53 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TRAINING</title>
+        <title>Practice 2</title>
         <style>
             body {
-                background-color: darkgrey;
+                background-color: darkslategrey;
             }
-            #headboard {
-                
-                margin: auto;
-                background-color: brown;
-                color: aliceblue;
-                text-align: center;
-                font-size: 28px;
-                font-family: Arial, Helvetica, sans-serif;
-                padding: 5px; 
+            
+            #head {
                 width: 628px;
-                
-            }
-            #Menu {
-                color: whitesmoke;
-                width: 88px;
-                height: 32px;
-                float: right;
-                background-color: cadetblue;
-                border: 2px;
-                border-radius: 5%;
-                text-align:center;
-                padding-top: 5px;
+                height: 50px;
+                color: aliceblue;
+                background-color: navy;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                text-align: center;
                 margin: auto;
-            }
-            #Menu:hover {
-                background-color: blue;
             }
 
-            #leftbox {
-                background-color: darkcyan;
-                width: fit-content;
-                height: fit-content;
-                color: aliceblue;
-                text-align: center;
-                font-family: Arial, Helvetica, sans-serif;
+            .lefttower, .containerbc {
+                background-color: brown;
+                width: 1500px;
+                height: 155px;
+                position: absolute;
+                margin-top: 28px; 
             }
+
+            #container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+            }
+            #container > div {
+                margin-top: 20px;
+                margin-inline: 25px;                                
+            }
+            
+            .button {
+                width: 88px;
+                height: 88px;
+                text-align: center;
+                color: aliceblue;
+                font-size: 23px;
+                font-weight: bold;
+                background-color: beige;
+                border-radius: 45px;
+            } 
+            .button:hover {
+                background-color: navy;
+            }
+            .button img {
+                width: 88px;                
+            }
+
+            .lefttower  {
+                z-index: 10;
+                background: navy;
+                margin: 5px;  
+                margin-top: 38px;
+                width: 200px;              
+                height: 500px;
+            }
+
 
         </style>
     </head>
     <body>
-        <div id="headboard">This is the size of the HEADING</div>
-        <h2 id="Menu">MENU</h2>
-        <h6 id="leftbox">This is the smallest text we can have typed here in the HTML Body!</h6>
+        <div id="head"><H1>Centered Title of Page</H1></div>
+        <div class="lefttower"> </div>
+        <div class="containerbc">
+            <div id="container">
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 1</div>
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 2</div>
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 3</div>
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 4</div>
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 5</div>
+                <div class="button"><img src="WEB READY/Elements/Me.png">USER 6</div>
+            </div>
+        </div>
+        
     </body>
 </html>
