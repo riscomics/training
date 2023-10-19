@@ -21,21 +21,21 @@
         .lefttower {
             background: navy;
             width: 200px;
-            height: 500px;
+            height: 412px;
+            float: left;
             position: relative;
-            top: -338px;
-            left: 0;
             z-index: 2;
+            bottom: 338px;
         }
 
         .righttower {
             background: navajowhite;
             width: 228px;
-            height: 500px;
+            height: 412px;
             position: relative;
-            top: -838px;
             float: right;
             z-index: 3;
+            bottom: 338px;
         }
 
         .containerbc {
@@ -72,7 +72,10 @@
             line-height: 28px;
             justify-content: space-between;
         }
-
+        .button a {
+            text-decoration: none;
+            color: inherit;
+        }
         .button:hover {
             background-color: navy;
         }
@@ -91,7 +94,7 @@
 
     <div class="containerbc">
         <div id="container">
-            <div class="button"><img src="WEB READY/Elements/Me.png">USER 1</div>
+            <div class="button"><a href="index.html"><img src="WEB READY/Elements/Me.png">USER 1</a></div>
             <div class="button"><img src="WEB READY/Elements/Me.png">USER 2</div>
             <div class="button"><img src="WEB READY/Elements/Me.png">USER 3</div>
             <div class="button"><img src="WEB READY/Elements/Me.png">USER 4</div>
