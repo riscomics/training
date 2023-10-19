@@ -1,83 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Practice 2</title>
-        <style>
-            body {
-                background-color: darkslategrey;
-            }
-            
-            #head {
-                width: 628px;
-                height: 50px;
-                color: aliceblue;
-                background-color: navy;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                text-align: center;
-                margin: auto;
-            }
 
-            .lefttower, .containerbc {
-                background-color: brown;
-                width: 1500px;
-                height: 155px;
-                position: absolute;
-                margin-top: 28px; 
-            }
+<head>
+    <title>Practice 2</title>
+    <style>
+        body {
+            background-color: darkslategrey;
+        }
 
-            #container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                
-            }
-            #container > div {
-                margin-top: 20px;
-                margin-inline: 25px;                                
-            }
-            
-            .button {
-                width: 88px;
-                height: 88px;
-                text-align: center;
-                color: aliceblue;
-                font-size: 23px;
-                font-weight: bold;
-                background-color: beige;
-                border-radius: 45px;
-            } 
-            .button:hover {
-                background-color: navy;
-            }
-            .button img {
-                width: 88px;                
-            }
+        #head {
+            width: 628px;
+            height: 50px;
+            color: aliceblue;
+            background-color: navy;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin: auto;
+        }
 
-            .lefttower  {
-                z-index: 10;
-                background: navy;
-                margin: 5px;  
-                margin-top: 38px;
-                width: 200px;              
-                height: 500px;
-            }
+        .lefttower {
+            background: navy;
+            width: 200px;
+            height: 500px;
+            position: relative;
+            top: -338px;
+            left: 0;
+            z-index: 2;
+        }
 
+        .righttower {
+            background: navajowhite;
+            width: 228px;
+            height: 500px;
+            position: relative;
+            top: -838px;
+            float: right;
+            z-index: 3;
+        }
 
-        </style>
-    </head>
-    <body>
-        <div id="head"><H1>Centered Title of Page</H1></div>
-        <div class="lefttower"> </div>
-        <div class="containerbc">
-            <div id="container">
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 1</div>
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 2</div>
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 3</div>
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 4</div>
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 5</div>
-                <div class="button"><img src="WEB READY/Elements/Me.png">USER 6</div>
-            </div>
+        .containerbc {
+            background-color: brown;
+            width: auto;
+            height: 155px;
+            margin-top: 28px;
+            position: relative;
+            z-index: 1;
+        }
+
+        #container,
+        #container2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #container>div,
+        #container2>div {
+            margin-top: 20px;
+            margin-inline: 25px;
+        }
+
+        .button {
+            width: 88px;
+            height: 88px;
+            text-align: center;
+            color: aliceblue;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: beige;
+            border-radius: 45px;
+            line-height: 28px;
+            justify-content: space-between;
+        }
+
+        .button:hover {
+            background-color: navy;
+        }
+
+        .button img {
+            width: 88px;
+        } 
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <h1>Centered Title of Page</h1>
+    </div>
+
+    <div class="containerbc">
+        <div id="container">
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 1</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 2</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 3</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 4</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 5</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 6</div>
         </div>
-        
-    </body>
+    </div>
+    <div class="containerbc">
+        <div id="container2">
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 7</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 8</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 9</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 10</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 11</div>
+            <div class="button"><img src="WEB READY/Elements/Me.png">USER 12</div>
+        </div>
+    </div>
+    <div class="lefttower"></div>
+    <div class="righttower"></div>
+
+</body>
+
 </html>
