@@ -133,13 +133,18 @@
             .boxframe:hover {
                 background-color: aliceblue;
             }
-            .footer {
+            #footer {
                 color: #e6d6ae;
                 background-color: #363f4f;
                 font: 17px;
                 width: auto;
                 height: 28px;
                 padding-top: 10px;
+            }
+            #footer a {
+                text-decoration: none;
+                color: inherit;
+
             }
         }
 
@@ -264,17 +269,21 @@
             .boxframe:hover {
                 background-color: aliceblue;
             }
-            .footer {
+            #footer {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 color: #e6d6ae;
                 background-color: #363f4f;
                 font-size: 15px;
-                 
                 width: auto;
                 height: 23px;
                 padding-top: 5px;
+            }
+            #footer a {
+                text-decoration: none;
+                color: inherit;
+                margin-right: 5px;
             }
         }
 
@@ -398,17 +407,22 @@
                .boxframe:hover {
                    background-color: aliceblue;
                }
-               .footer {
+               .#footer {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 color: #e6d6ae;
                 background-color: #363f4f;
                 font-size: 12px;
-                 
                 width: auto;
                 height: 15px;
                 padding-top: 2px;
+                 
+            }
+            #footer a {
+                text-decoration: none;
+                color: inherit;
+                margin-right: 2px;
             }
            }
         </style>
@@ -424,7 +438,7 @@
 
         </div>
         <div class="linebreak"></div>
-        <div id="youtube"><img src="YouTube.jpg" alt="youtube"></div>
+        <div id="youtube"><a href="#footer"><img src="YouTube.jpg" alt="youtube"></a></div>
         <div class="linebreak"></div>
         <div class="category">BASIC HELPER</div>
 
@@ -432,7 +446,7 @@
 
     <div id="container1">
 
-        <div class="boxframe"><a href="headings.html"><img src="WEB READY/Hatod.png">HATOD </a></div>
+        <div class="boxframe"><a href="pages/headings.html"><img src="WEB READY/Hatod.png">HATOD </a></div>
         <div class="boxframe"><img src="WEB READY/Hakot.png">HAKOT </div>
         <div class="boxframe"><img src="WEB READY/Kompra.png">KOMPRA </div>
         <div class="boxframe"><img src="WEB READY/Luto.png">LUTO </div>
@@ -468,7 +482,7 @@
         <div class="boxframe"><img src="WEB READY/Electrician.png">ELECTRICIAN</div>
         <div class="boxframe"><img src="WEB READY/Tutor.png">TUTOR</div>
         </div>
-    <div class="footer">GISUGO.com is &copy;Copyright Designed by Real Interface Studios LLC</div>
+    <div id="footer"><a href="#">GISUGO.com</a> is &copy;Copyright Designed by Real Interface Studios LLC</div>
  
 
 
