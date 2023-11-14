@@ -31,10 +31,23 @@
             width: 888px;
         
         }
-        #topmenu {
-            background-color: #dce3f5;
-            height: 228px;
+        #topmenu {                    
             width: 178px;
+            height: 228px;
+        }
+        .menubutton {
+            width: 178px;
+            color: rgb(8, 8, 45);
+            background-color: #a1ccef;    
+            font-size: 22px;
+            font-family: arial;
+            border: none;     
+            cursor: pointer;     
+            line-height: 38px;  
+        }
+        .menubutton:hover {
+            color: aliceblue;
+            background-color: rgba(8, 8, 45, .8);
         }
         #topmenubox {
             background-color: #ffffff;
@@ -200,14 +213,14 @@
             margin-bottom: 0px;            
         }
         
-        { ********************  }
+        { ****************************************  }
 
         .midbar {
             width: auto;
-            height: 450px;
+            height: 455px;
             background-color: #dce3f5;  
             margin-top: -20px;
-            margin-bottom: 50px;
+            margin-bottom: 10px;
         }
         .midtextbox {
             width: 650px;
@@ -222,15 +235,13 @@
             font-family: arial;
             padding-top: 5px;
             line-height: 150%;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
-
         .readmorebox {
             display: grid;
             grid-template-columns: 278px 278px 278px;
             justify-content: center;
             column-gap: 49px;
-
         }
         .readmore {
             width: 100%;
@@ -245,9 +256,8 @@
             border-radius: 115px;            
         }
         .readcircle:hover {
-            width: 249px;
+            width: 250px;
             height: 228px;
-            cursor: pointer;
             box-shadow: 1px 2px 8px rgba(255, 0, 0, .3);
         }
         .readtext {
@@ -279,6 +289,21 @@
             border-color: rgb(255, 255, 255);            
             background-color: rgb(251, 37, 37);
             box-shadow: 1px 1px 5px rgba(255, 0, 0, .3);
+        }
+
+        { ****************************************  }
+        
+        .youtube1 {
+            width: 828px;
+            height: 465px;
+            border-style: solid;
+            border-width: 7px;
+            border-color:#51a7ec;
+            border-radius: 10px;
+            margin: auto;
+            margin-bottom: 25px;
+        }
+
     </style>
 </head>
 
@@ -292,7 +317,15 @@
 
         <div id="topmenubc">
             <div id="topmenubox">
-                <div id="topmenu"></div>
+                <div id="topmenu">
+                    <button class="menubutton">Home</button>
+                    <button class="menubutton">About Us</button>
+                    <button class="menubutton">Our Tours</button>
+                    <button class="menubutton">Terms of Service</button>
+                    <button class="menubutton">Privacy Policy</button>
+                    <button class="menubutton">Contact</button>
+ 
+                </div>
             </div>
         </div>
     </div>
@@ -331,36 +364,40 @@
         <div class="readmorebox">
             <div class="readmore">
                <div>
-                <img class="readcircle" 
-                src="elements conexpress/group-matching.jpg">
+                <img class="readcircle" src="elements conexpress/group-matching.jpg">
                </div>
                <div class="readtext">Hotel Room Sharing Options</div>
                <div>
                 <button class="readbutton">Read More</button>
                </div>
             </div>
+
             <div class="readmore">
-                <div>
-                <img class="readcircle" 
-                src="elements conexpress/Bus-2.jpg">
+                <div><img class="readcircle" src="elements conexpress/Bus-2.jpg">
                </div>
                <div class="readtext">Bus Ride & Group Meals </div>
                <div>
                 <button class="readbutton">Read More</button>
                </div>
              </div>
+
              <div class="readmore">
                 <div>
-                <img class="readcircle" 
-                src="elements conexpress/Burgers.jpg">
-               </div>
+                    <img class="readcircle" src="elements conexpress/Burgers.jpg">
+                </div>
                <div class="readtext">Meet People with Similar Interests</div>
                <div>
                 <button class="readbutton">Read More</button>
                </div>
              </div>
+        </div>        
+    </div>
 
-        </div>
+    <div class="youtube1">
+        <iframe width="828" height="465" 
+        src="https://www.youtube.com/embed/7EyOlfD-dOE?si=nFv23GGiVgtdykRa" 
+        frameborder="0" allowfullscreen>
+        </iframe>
     </div>
 
 </body>
